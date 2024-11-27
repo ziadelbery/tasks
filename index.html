@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login and Registration</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div id="login" class="form-container">
+    <h2 class="text-center">Welcome Back</h2>
+    <p class="text-center text-muted">Please login to your account</p>
+    <div class="mb-3">
+      <label for="login-email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="login-email" placeholder="Enter your email">
+    </div>
+    <div class="mb-3">
+      <label for="login-password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="login-password" placeholder="Enter your password">
+    </div>
+    <button class="btn btn-custom w-100" onclick="login()">Login</button>
+    <div class="form-link mt-3">Don't have an account? <a href="#" onclick="showRegistration()">Sign Up</a></div>
+  </div>
+
+  <div id="register" class="form-container hidden">
+    <h2 class="text-center">Create Account</h2>
+    <p class="text-center text-muted">Join us today</p>
+    <div class="mb-3">
+      <label for="register-name" class="form-label">Name</label>
+      <input type="text" class="form-control" id="register-name" placeholder="Enter your name">
+    </div>
+    <div class="mb-3">
+      <label for="register-email" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="register-email" placeholder="Enter your email">
+    </div>
+    <div class="mb-3">
+      <label for="register-password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="register-password" placeholder="Enter your password">
+    </div>
+    <button class="btn btn-custom w-100" onclick="register()">Register</button>
+    <div class="form-link mt-3">Already have an account? <a href="#" onclick="showLogin()">Login</a></div>
+  </div>
+
+  <div id="home" class="form-container hidden">
+    <h2 class="text-center">Welcome</h2>
+    <p id="welcome-message" class="text-center">Hello, User!</p>
+    <button class="btn btn-custom w-100 mt-3" onclick="logout()">Logout</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

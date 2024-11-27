@@ -1,0 +1,94 @@
+/* استايل جديد لصفحة تسجيل الدخول والتسجيل */
+body {
+    background: linear-gradient(135deg, #a8c0ff, #3f2b96);
+    /* تدرج لوني هادئ */
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    /* خط عصري */
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.15);
+    /* خلفية شفافة */
+    padding: 45px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    /* تأثير الظل ناعم */
+    backdrop-filter: blur(12px);
+}
+
+.form-container h2 {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.form-container p {
+    color: #e6e6e6;
+    margin-bottom: 25px;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 18px;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    outline: none;
+}
+
+.btn-custom {
+    background: linear-gradient(135deg, #00b4d8, #0077b6);
+    /* تدرج لوني بارد */
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.btn-custom:hover {
+    background: linear-gradient(135deg, #0077b6, #00b4d8);
+    transform: scale(1.05);
+}
+
+.form-link {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.form-link a {
+    color: #00b4d8;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.form-link a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
