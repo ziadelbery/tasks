@@ -75,7 +75,16 @@ body {
   color: #1e88e5;
   transform: scale(1.2);
 }
-
+.liked {
+  color: #e91e63;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+.saved {
+  color: #03a9f4;
+  transform: scale(1.2);
+  transition: all 0.3s ease;
+}
 .like-btn:hover {
   color: #e91e63;
 }
